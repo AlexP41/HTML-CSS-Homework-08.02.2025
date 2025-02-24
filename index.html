@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,9 +17,11 @@
   <body>
     <header>
       <div class="header--container">
-        <img src="logo.webp" alt="logo" class="logo" />
+        <a href="index.html">
+        <img src="/images/logo.webp" alt="logo" class="logo" />
+      </a>
         <nav class="header-nav">
-          <a href="index.html" class="nav-link"> Main </a>
+          <a href="index.html" class="nav-link" aria-current="page"> Main </a>
           <a href="sonik-movie.html" class="nav-link">Sonic the Hedgehog 3</a>
           <a href="pulman-movie.html" class="nav-link">Pulman</a>
           <a href="glass-wizard-movie.html" class="nav-link">Glass Wizard</a>
@@ -30,9 +32,9 @@
       <h1>Очікувані Прем'жри в кінотеатрах</h1>
       <div class="row-of-movies-cards">
         <div class="movie-card">
-          <a href="sonik-movie.html">
+          <a href="sonik-movie.html" class="movie-link">
             <img
-              src="w120_27hcifbhjak-son-k-3.webp"
+              src="/images/sonik/sonik-movie.webp"
               alt="soni-3-mowie"
               class="movie-img"
             />
@@ -55,9 +57,9 @@
         </div>
         <hr />
         <div class="movie-card">
-          <a href="pulman-movie.html">
+          <a href="pulman-movie.html" class="movie-link">
             <img
-              src="w120_27ks6uid.webp"
+              src="/images/pulman/pulman-movie.webp"
               alt="pulman-mwoie"
               class="movie-img"
             />
@@ -74,9 +76,9 @@
         </div>
         <hr />
         <div class="movie-card">
-          <a href="glass-wizard-movie.html">
+          <a href="glass-wizard-movie.html" class="movie-link">
             <img
-              src="w120_27nh0uvt.webp"
+              src="/images/glass-wizard/glass-wizard-movie.webp"
               alt="glass-wizard-mowie"
               class="movie-img"
             />
@@ -99,6 +101,24 @@
         <hr />
       </div>
     </main>
-    <footer></footer>
+    <footer>
+
+      <div class="footer-container">
+        <p>&copy; 2025 Очікувані Прем'єри в кінотеатрах. Усі права захищені.</p>
+        <nav class="footer-nav">
+          <a href="index.html">Головна</a>
+          <a href="#">Контакти</a>
+          <a href="#">Політика конфіденційності</a>
+          <a href="#">Правила користування</a>
+        </nav>
+        <p class="social-links-title">Стежте за нами у соцмережах:</p>
+        <div class="social-links">
+          <a href="#"><img src="/images/icons/facebook.svg" alt="Facebook"></a>
+          <a href="#"><img src="/images/icons/instagram.svg" alt="Instagram"></a>
+          <a href="#"><img src="/images/icons/twitter.svg" alt="Twitter"></a>
+          <a href="#"><img src="/images/footer/youtube." alt="YouTube"></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

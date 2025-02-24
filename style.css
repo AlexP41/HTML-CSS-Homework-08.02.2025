@@ -13,6 +13,8 @@
 
 /* --------------------------------- MAIN --------------------------------- */
 
+
+
 .row-of-movies-cards {
   display: flex;
   flex-direction: column;
@@ -28,8 +30,14 @@
   grid-template-rows: 1fr;
 }
 
+
 .movie-img {
   grid-row: 1 / -1;
+  transition: transform 0.3s ease-in-out; 
+}
+
+.movie-img:hover {
+  transform: scale(1.1);
 }
 
 .movie-info {

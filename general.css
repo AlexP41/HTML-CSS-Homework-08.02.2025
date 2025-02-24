@@ -9,6 +9,8 @@
       /* MAIN COLOR:#1c7ed6
       Tint color: #e8f2fb
       Grey color: #343a40
+
+      other colors: #d6336c;
       */
 
 * {
@@ -31,6 +33,57 @@ h1 {
   font-size: 2.4rem;
   margin-left: 4.8rem;
 }
+
+
+
+/*  --------------------------------- Style for the current page --------------------------------- */
+a[aria-current="page"] {
+  font-weight: bold;
+  background-color: #d6336c;
+  color: #fff;
+  
+}
+
+a[aria-current="page"] {
+  font-weight: bold;
+  background-color: #d6336c;
+  color: #fff;
+  padding: 0.9rem 1.6rem;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  display: inline-block;
+}
+
+
+a[aria-current="page"]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(214, 51, 108, 0.2); /* Той самий колір, але прозорий */
+  border-radius: 8px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+a[aria-current="page"]:hover::before {
+  transform: scaleX(1);
+}
+
+
+a[aria-current="page"]:hover {
+  background-color: #b72b5a; 
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px 
+  rgba(214, 51, 108, 0.3);
+}
+/*  ------------------------------------------------------------------ */
+
+
+
+
+
 
 /* --------------------------------- HEADER --------------------------------- */
 
@@ -62,7 +115,14 @@ header {
   gap: 1.6rem;
 }
 
+a {
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
 
+a:hover {
+  color: #d6336c; 
+  transform: scale(1.1);
+}
 
 .nav-link {
   text-decoration: none;
@@ -95,4 +155,53 @@ header {
   background-color: #1c7ed6;
   transform: scale(1.05);
   box-shadow: 0 4px 10px rgba(28, 126, 214, 0.3);
+}
+
+/*  ------------------------------------------------------------------ */
+
+/* --------------------------------- FOOTER--------------------------------- */
+
+footer {
+  background-color: #1c1c1c;
+  color: #fff;
+  text-align: center;
+  padding: 3.2rem 0;
+}
+
+.footer-container {
+  max-width: 120rem;
+  margin: auto;
+}
+
+.footer-nav {
+  display: flex;
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+
+}
+
+.footer-nav a {
+  color: #ff6b6b;
+  text-decoration: none;
+}
+
+.footer-nav a:hover {
+  text-decoration: none;
+}
+
+.social-links-title {
+  margin-bottom: 1.2rem;
+}
+
+.social-links img {
+  width: 2.4rem;
+  margin: 0 0.8rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-links img:hover {
+  transform: scale(1.2);
 }
