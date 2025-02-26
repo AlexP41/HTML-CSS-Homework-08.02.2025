@@ -6,11 +6,16 @@
       10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
       */
 
-      /* MAIN COLOR:#1c7ed6
+/* MAIN COLOR:#1c7ed6
       Tint color: #e8f2fb
       Grey color: #343a40
 
       other colors: #d6336c;
+
+
+
+  Border radius:
+    8px
       */
 
 * {
@@ -27,21 +32,17 @@ body {
 }
 
 h1 {
-
   margin-bottom: 4.8rem;
   margin-top: 3rem;
   font-size: 2.4rem;
   margin-left: 4.8rem;
 }
 
-
-
 /*  --------------------------------- Style for the current page --------------------------------- */
 a[aria-current="page"] {
   font-weight: bold;
   background-color: #d6336c;
   color: #fff;
-  
 }
 
 a[aria-current="page"] {
@@ -49,12 +50,10 @@ a[aria-current="page"] {
   background-color: #d6336c;
   color: #fff;
   padding: 0.9rem 1.6rem;
-  border-radius: 8px;
   transition: all 0.3s ease-in-out;
   position: relative;
   display: inline-block;
 }
-
 
 a[aria-current="page"]::before {
   content: "";
@@ -71,26 +70,19 @@ a[aria-current="page"]:hover::before {
   transform: scaleX(1);
 }
 
-
 a[aria-current="page"]:hover {
-  background-color: #b72b5a; 
+  background-color: #b72b5a;
   transform: scale(1.05);
-  box-shadow: 0 4px 10px 
-  rgba(214, 51, 108, 0.3);
+  box-shadow: 0 4px 10px rgba(214, 51, 108, 0.3);
 }
 /*  ------------------------------------------------------------------ */
-
-
-
-
-
 
 /* --------------------------------- HEADER --------------------------------- */
 
 .logo {
   width: 4.8rem;
   height: 4.8rem;
-  background-color: #e8f2fb
+  background-color: #e8f2fb;
 }
 
 html {
@@ -120,7 +112,7 @@ a {
 }
 
 a:hover {
-  color: #d6336c; 
+  color: #d6336c;
   transform: scale(1.1);
 }
 
@@ -179,8 +171,7 @@ footer {
   margin-bottom: 2.4rem;
   justify-content: center;
   align-items: center;
-  gap: 1.6rem;
-
+  gap: 2.4rem;
 }
 
 .footer-nav a {
@@ -204,4 +195,46 @@ footer {
 
 .social-links img:hover {
   transform: scale(1.2);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-link:hover {
+  transform: scale(1.1);
+}
+
+.social-link:hover.social-icon.footer-media-icon {
+  transform: scale(5);
+}
+
+.social-link:hover .social-icon {
+  transform: scale(1.2);
+}
+
+.footer-media-icon {
+  transform: scale(1.5);
 }

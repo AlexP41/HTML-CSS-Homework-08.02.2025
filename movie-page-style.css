@@ -1,0 +1,103 @@
+body {
+  line-height: 1.6;
+}
+
+.main-container {
+  display: grid;
+  max-width: 80rem;
+  margin: auto;
+  padding: 4.8rem;
+  grid-template-columns: 0.25fr 1fr;
+  grid-template-rows: 1fr auto auto auto;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  column-gap: 4.8rem;
+  margin: 4.8rem;
+  background-color: #fff;
+  border-radius: 8px;
+  row-gap: 4.8rem;
+}
+
+.align-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeeee;
+}
+
+.movie-img--for-page img {
+  width: 25rem;
+}
+
+.movie-img--for-page img {
+  grid-row: 1 / -1;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 8px;
+}
+
+.movie-img--for-page img:hover {
+  transform: scale(1.1);
+}
+
+.movie-description {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.movie-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  grid-column: 1 / -1;
+}
+
+.movie-facts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  grid-column: 1 / -1;
+}
+
+.buy-tickets {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.buy-tickets--container {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.buy-tickets--container:hover {
+  transform: scale(1.1);
+}
+
+.icon--ticket {
+  width: 3.6rem;
+  height: 3.6rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn--buy-tickets {
+  text-decoration: none;
+  color: #1c7ed6;
+  font-weight: 600;
+  font-size: 1.6rem;
+  background-color: #fff;
+  border: 1px solid #1c7ed6;
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  padding: 1.2rem 2.4rem;
+  white-space: nowrap;
+}
+
+.buy-tickets--container:hover .btn--buy-tickets {
+  background-color: #1c7ed6;
+  color: #fff;
+}
